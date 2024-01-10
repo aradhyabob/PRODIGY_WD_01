@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    background: #000000;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 8px;
+}
+
+nav .menu-img {
+    width: 26px;
+    margin-left: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav .logo {
+    width: 180px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: navy;
+}
+
+button {
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 60px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin: 0 20px;
+    transition: background 0.5s;
+}
+
+button span {
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 13px;
+    margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+
+.constellation-container {
+    position: absolute;
+    left: 42%;
+    width: 200px;
+}
+
+.constellation {
+    position: absolute;
+    top: -7%;
+    left: 67%;
+    transform: translateX(-145%) rotate(-7deg);
+    width: 400px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.orion {
+    width: 300%;
+    transform: translateX(-90%);
+}
+
+.text-container {
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.text-container h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.text-container p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.active {
+    background: navy;
+}
+
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+
+.on {
+    opacity: 1;
+}
